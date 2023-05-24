@@ -9,12 +9,13 @@ def main():
             Pi = Pi + 4/deno
         else:
             Pi = Pi - 4/deno
-    print(Pi)
+    print("Pi is " + str(Pi))
 def userInput():
     while True:
-        Num = input()
+        Num = (input("Please input valid number: \n"))
         if Num.isnumeric():
-            if int(Num) > 0:
-                return Num
+            if float(Num).is_integer():
+                if int(Num) > 0:
+                    return Num
 
 main()
